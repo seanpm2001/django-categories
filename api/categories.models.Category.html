@@ -1,0 +1,1349 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Category &#8212; Django Categories 1.9.2 documentation</title>
+  <script>
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+
+  
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/6.1.2/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'api/categories.models.Category';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="CategoryRelation" href="categories.models.CategoryRelation.html" />
+    <link rel="prev" title="models" href="categories.models.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="docsearch:language" content="en">
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+  <label class="overlay overlay-primary" for="__primary"></label>
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+      
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+  </div>
+
+  
+  <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+      <span class="fas fa-bars"></span>
+  </label>
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../index.html">
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+    <p class="title logo__title">Django Categories 1.9.2 documentation</p>
+  
+</a>
+    
+  </div>
+
+  
+  <div class="col-lg-9 navbar-header-items">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../installation.html">
+                        Installation
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../getting_started.html">
+                        Getting Started
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../user_guide/index.html">
+                        User Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../reference/index.html">
+                        Reference
+                    </a>
+                </li>
+                
+
+                <li class="nav-item current active">
+                    <a class="nav-link" href="index.html">
+                        API
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="../changelog.html">
+                        Changelog
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      <div class="navbar-end-item navbar-end__search-button-container">
+        
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search">
+  <i class="fas fa-search"></i>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+
+
+  
+  <div class="search-button-container--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search">
+  <i class="fas fa-search"></i>
+</button>
+  </div>
+
+  
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fas fa-outdent"></span>
+  </label>
+  
+
+</div>
+  </nav>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../installation.html">
+                        Installation
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../getting_started.html">
+                        Getting Started
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../user_guide/index.html">
+                        User Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../reference/index.html">
+                        Reference
+                    </a>
+                </li>
+                
+
+                <li class="nav-item current active">
+                    <a class="nav-link" href="index.html">
+                        API
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="../changelog.html">
+                        Changelog
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+      </div>
+    
+
+    
+    
+    <div class="sidebar-header-items__end">
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+  <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">
+    Section Navigation
+  </p>
+  <div class="bd-toc-item navbar-nav">
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="categories.html">
+   categories
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="categories.admin.html">
+     admin
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="categories.admin.CategoryAdmin.html">
+       CategoryAdmin
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="categories.admin.CategoryAdminForm.html">
+       CategoryAdminForm
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="categories.admin.InlineCategoryRelation.html">
+       InlineCategoryRelation
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="categories.admin.NullTreeNodeChoiceField.html">
+       NullTreeNodeChoiceField
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="categories.api.html">
+     api
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="categories.apps.html">
+     apps
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="categories.apps.handle_class_prepared.html">
+       handle_class_prepared
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="categories.apps.CategoriesConfig.html">
+       CategoriesConfig
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="categories.base.html">
+     base
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="categories.base.CategoryBase.html">
+       CategoryBase
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="categories.base.CategoryBaseAdmin.html">
+       CategoryBaseAdmin
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="categories.base.CategoryBaseAdminForm.html">
+       CategoryBaseAdminForm
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="categories.base.CategoryManager.html">
+       CategoryManager
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="categories.editor.html">
+     editor
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="categories.editor.models.html">
+       models
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="categories.editor.settings.html">
+       settings
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="categories.editor.templatetags.html">
+       templatetags
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+      <label class="toctree-toggle" for="toctree-checkbox-6">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="categories.editor.templatetags.admin_tree_list_tags.html">
+         admin_tree_list_tags
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="categories.editor.tree_editor.html">
+       tree_editor
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+      <label class="toctree-toggle" for="toctree-checkbox-7">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="categories.editor.tree_editor.TreeChangeList.html">
+         TreeChangeList
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="categories.editor.tree_editor.TreeEditor.html">
+         TreeEditor
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="categories.editor.tree_editor.TreeEditorQuerySet.html">
+         TreeEditorQuerySet
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="categories.editor.utils.html">
+       utils
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+      <label class="toctree-toggle" for="toctree-checkbox-8">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="categories.editor.utils.display_for_field.html">
+         display_for_field
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="categories.fields.html">
+     fields
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-9">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="categories.fields.CategoryFKField.html">
+       CategoryFKField
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="categories.fields.CategoryM2MField.html">
+       CategoryM2MField
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="categories.genericcollection.html">
+     genericcollection
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="categories.genericcollection.GenericCollectionInlineModelAdmin.html">
+       GenericCollectionInlineModelAdmin
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="categories.genericcollection.GenericCollectionStackedInline.html">
+       GenericCollectionStackedInline
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="categories.genericcollection.GenericCollectionTabularInline.html">
+       GenericCollectionTabularInline
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="categories.management.html">
+     management
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-11">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="categories.management.commands.html">
+       commands
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+      <label class="toctree-toggle" for="toctree-checkbox-12">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="categories.management.commands.add_category_fields.html">
+         add_category_fields
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="categories.management.commands.drop_category_field.html">
+         drop_category_field
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="categories.management.commands.import_categories.html">
+         import_categories
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="categories.migration.html">
+     migration
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-13">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="categories.migration.drop_field.html">
+       drop_field
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="categories.migration.field_exists.html">
+       field_exists
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="categories.migration.migrate_app.html">
+       migrate_app
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="categories.migration.table_exists.html">
+       table_exists
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="categories.models.html">
+     models
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-14">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Category
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="categories.models.CategoryRelation.html">
+       CategoryRelation
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="categories.models.CategoryRelationManager.html">
+       CategoryRelationManager
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="categories.registration.html">
+     registration
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-15">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="categories.registration._process_registry.html">
+       _process_registry
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="categories.registration.Registry.html">
+       Registry
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="categories.settings.html">
+     settings
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-16">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="categories.settings.SLUG_TRANSLITERATOR.html">
+       SLUG_TRANSLITERATOR
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="categories.templatetags.html">
+     templatetags
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-17">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="categories.templatetags.category_tags.html">
+       category_tags
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
+      <label class="toctree-toggle" for="toctree-checkbox-18">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="categories.templatetags.category_tags.breadcrumbs.html">
+         breadcrumbs
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="categories.templatetags.category_tags.display_drilldown_as_ul.html">
+         display_drilldown_as_ul
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="categories.templatetags.category_tags.display_path_as_ul.html">
+         display_path_as_ul
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="categories.templatetags.category_tags.do_get_latest_objects_by_category.html">
+         do_get_latest_objects_by_category
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="categories.templatetags.category_tags.get_cat_model.html">
+         get_cat_model
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="categories.templatetags.category_tags.get_category.html">
+         get_category
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="categories.templatetags.category_tags.get_category_drilldown.html">
+         get_category_drilldown
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="categories.templatetags.category_tags.get_latest_objects_by_category.html">
+         get_latest_objects_by_category
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="categories.templatetags.category_tags.get_top_level_categories.html">
+         get_top_level_categories
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="categories.templatetags.category_tags.recursetree.html">
+         recursetree
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="categories.templatetags.category_tags.resolve.html">
+         resolve
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="categories.templatetags.category_tags.tree_queryset.html">
+         tree_queryset
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="categories.templatetags.category_tags.CategoryDrillDownNode.html">
+         CategoryDrillDownNode
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="categories.templatetags.category_tags.LatestObjectsNode.html">
+         LatestObjectsNode
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="categories.templatetags.category_tags.TopLevelCategoriesNode.html">
+         TopLevelCategoriesNode
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="categories.urls.html">
+     urls
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="categories.views.html">
+     views
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-19">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="categories.views.category_detail.html">
+       category_detail
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="categories.views.get_category_for_path.html">
+       get_category_for_path
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="categories.views.CategoryDetailView.html">
+       CategoryDetailView
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="categories.views.CategoryRelatedDetail.html">
+       CategoryRelatedDetail
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="categories.views.CategoryRelatedList.html">
+       CategoryRelatedList
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+  </div>
+</nav>
+    </div>
+  </div>
+  
+
+  
+  <div class="sidebar-end-items sidebar-primary__section">
+    <div class="sidebar-end-items__item">
+    </div>
+  </div>
+
+      </div>
+      <main class="bd-main">
+        
+        
+        <div class="bd-content">
+          <div class="bd-article-container">
+            
+            <div class="bd-header-article">
+                
+            </div>
+            
+            
+            <article class="bd-article" role="main">
+              
+  <p class="h4 text-secondary">categories.models.Category</p>
+<section id="category">
+<h1>Category<a class="headerlink" href="#category" title="Permalink to this heading">#</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="categories.models.Category">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">categories.models.</span></span><span class="sig-name descname"><span class="pre">Category</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/categories/models.html#Category"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#categories.models.Category" title="Permalink to this definition">#</a></dt>
+<dd><p>A basic category model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.AutoField" title="(in Django v4.1)"><em>AutoField</em></a>) – Primary key: ID</p></li>
+<li><p><strong>name</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.CharField" title="(in Django v4.1)"><em>CharField</em></a>) – Name</p></li>
+<li><p><strong>slug</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.SlugField" title="(in Django v4.1)"><em>SlugField</em></a>) – Slug</p></li>
+<li><p><strong>active</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.BooleanField" title="(in Django v4.1)"><em>BooleanField</em></a>) – Active</p></li>
+<li><p><strong>thumbnail</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.FileField" title="(in Django v4.1)"><em>FileField</em></a>) – Thumbnail</p></li>
+<li><p><strong>thumbnail_width</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.IntegerField" title="(in Django v4.1)"><em>IntegerField</em></a>) – Thumbnail width</p></li>
+<li><p><strong>thumbnail_height</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.IntegerField" title="(in Django v4.1)"><em>IntegerField</em></a>) – Thumbnail height</p></li>
+<li><p><strong>order</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.IntegerField" title="(in Django v4.1)"><em>IntegerField</em></a>) – Order</p></li>
+<li><p><strong>alternate_title</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.CharField" title="(in Django v4.1)"><em>CharField</em></a>) – Alternate title. An alternative title to use on pages with this category.</p></li>
+<li><p><strong>alternate_url</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.CharField" title="(in Django v4.1)"><em>CharField</em></a>) – Alternate url. An alternative URL to use instead of the one derived from the category hierarchy.</p></li>
+<li><p><strong>description</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.TextField" title="(in Django v4.1)"><em>TextField</em></a>) – Description</p></li>
+<li><p><strong>meta_keywords</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.CharField" title="(in Django v4.1)"><em>CharField</em></a>) – Meta keywords. Comma-separated keywords for search engines.</p></li>
+<li><p><strong>meta_extra</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.TextField" title="(in Django v4.1)"><em>TextField</em></a>) – Meta extra. (Advanced) Any additional HTML to be placed verbatim in the &amp;lt;head&amp;gt;</p></li>
+<li><p><strong>lft</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.PositiveIntegerField" title="(in Django v4.1)"><em>PositiveIntegerField</em></a>) – Lft</p></li>
+<li><p><strong>rght</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.PositiveIntegerField" title="(in Django v4.1)"><em>PositiveIntegerField</em></a>) – Rght</p></li>
+<li><p><strong>tree_id</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.PositiveIntegerField" title="(in Django v4.1)"><em>PositiveIntegerField</em></a>) – Tree id</p></li>
+<li><p><strong>level</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.PositiveIntegerField" title="(in Django v4.1)"><em>PositiveIntegerField</em></a>) – Level</p></li>
+</ul>
+</dd>
+</dl>
+<p>Relationship fields:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>parent</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">TreeForeignKey</span></code> to <a class="reference internal" href="#categories.models.Category" title="categories.models.Category"><code class="xref py py-class docutils literal notranslate"><span class="pre">Category</span></code></a>) – Parent (related name: <code class="xref py py-attr docutils literal notranslate"><span class="pre">children</span></code>)</p>
+</dd>
+</dl>
+<p>Reverse relationships:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>flatpage</strong> (Reverse <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.ForeignKey" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ForeignKey</span></code></a> from <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/contrib/flatpages/#django.contrib.flatpages.models.FlatPage" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">FlatPage</span></code></a>) – All flat pages of this category (related name of <code class="xref py py-attr docutils literal notranslate"><span class="pre">category</span></code>)</p></li>
+<li><p><strong>other_cats</strong> (Reverse <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.ManyToManyField" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ManyToManyField</span></code></a> from <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/contrib/flatpages/#django.contrib.flatpages.models.FlatPage" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">FlatPage</span></code></a>) – All other cats of this category (related name of <code class="xref py py-attr docutils literal notranslate"><span class="pre">other_categories</span></code>)</p></li>
+<li><p><strong>more_cats</strong> (Reverse <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.ManyToManyField" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ManyToManyField</span></code></a> from <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/contrib/flatpages/#django.contrib.flatpages.models.FlatPage" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">FlatPage</span></code></a>) – All more cats of this category (related name of <code class="xref py py-attr docutils literal notranslate"><span class="pre">more_categories</span></code>)</p></li>
+<li><p><strong>children</strong> (Reverse <code class="xref py py-class docutils literal notranslate"><span class="pre">TreeForeignKey</span></code> from <a class="reference internal" href="#categories.models.Category" title="categories.models.Category"><code class="xref py py-class docutils literal notranslate"><span class="pre">Category</span></code></a>) – All children of this category (related name of <code class="xref py py-attr docutils literal notranslate"><span class="pre">parent</span></code>)</p></li>
+<li><p><strong>categoryrelation</strong> (Reverse <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.ForeignKey" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ForeignKey</span></code></a> from <a class="reference internal" href="categories.models.CategoryRelation.html#categories.models.CategoryRelation" title="categories.models.CategoryRelation"><code class="xref py py-class docutils literal notranslate"><span class="pre">CategoryRelation</span></code></a>) – All category relations of this category (related name of <code class="xref py py-attr docutils literal notranslate"><span class="pre">category</span></code>)</p></li>
+<li><p><strong>simpletext</strong> (Reverse <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.ForeignKey" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ForeignKey</span></code></a> from <code class="xref py py-class docutils literal notranslate"><span class="pre">SimpleText</span></code>) – All Simple Text of this category (related name of <code class="xref py py-attr docutils literal notranslate"><span class="pre">primary_category</span></code>)</p></li>
+<li><p><strong>simpletext_sec_cat</strong> (Reverse <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.ForeignKey" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ForeignKey</span></code></a> from <code class="xref py py-class docutils literal notranslate"><span class="pre">SimpleText</span></code>) – All simpletext sec cat of this category (related name of <code class="xref py py-attr docutils literal notranslate"><span class="pre">secondary_category</span></code>)</p></li>
+<li><p><strong>m2mcats</strong> (Reverse <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.ManyToManyField" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ManyToManyField</span></code></a> from <code class="xref py py-class docutils literal notranslate"><span class="pre">SimpleText</span></code>) – All m2mcats of this category (related name of <code class="xref py py-attr docutils literal notranslate"><span class="pre">categories</span></code>)</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_check_column_name_clashes</span></code>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_check_constraints</span></code>(databases)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_check_default_pk</span></code>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_check_field_name_clashes</span></code>()</p></td>
+<td><p>Forbid field shadowing in multi-table inheritance.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_check_fields</span></code>(**kwargs)</p></td>
+<td><p>Perform all field checks.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_check_id_field</span></code>()</p></td>
+<td><p>Check if <cite>id</cite> field is a primary key.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_check_index_together</span></code>()</p></td>
+<td><p>Check the value of &quot;index_together&quot; option.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_check_indexes</span></code>(databases)</p></td>
+<td><p>Check fields, names, and conditions of indexes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_check_local_fields</span></code>(fields, option)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_check_long_column_names</span></code>(databases)</p></td>
+<td><p>Check that any auto-generated column names are shorter than the limits for each database in which the model will be created.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_check_m2m_through_same_relationship</span></code>()</p></td>
+<td><p>Check if no relationship model is used by more than one m2m field.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_check_managers</span></code>(**kwargs)</p></td>
+<td><p>Perform all manager checks.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_check_model</span></code>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_check_model_name_db_lookup_clashes</span></code>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_check_ordering</span></code>()</p></td>
+<td><p>Check &quot;ordering&quot; option -- is it a list of strings and do all fields exist?</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_check_property_name_related_field_accessor_clashes</span></code>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_check_single_primary_key</span></code>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_check_swappable</span></code>()</p></td>
+<td><p>Check if the swapped model exists.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_check_unique_together</span></code>()</p></td>
+<td><p>Check the value of &quot;unique_together&quot; option.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_do_insert</span></code>(manager, using, fields, ...)</p></td>
+<td><p>Do an INSERT.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_do_update</span></code>(base_qs, using, pk_val, values, ...)</p></td>
+<td><p>Try to update the model.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_get_FIELD_display</span></code>(field)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_get_expr_references</span></code>(expr)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_get_next_or_previous_by_FIELD</span></code>(field, ...)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_get_next_or_previous_in_order</span></code>(is_next)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_get_pk_val</span></code>([meta])</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_get_unique_checks</span></code>([exclude])</p></td>
+<td><p>Return a list of checks to perform.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_get_user_field_names</span></code>()</p></td>
+<td><p>Returns the list of user defined (i.e.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_is_saved</span></code>([using])</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_mptt_refresh</span></code>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_mptt_start_tracking</span></code>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_mptt_stop_tracking</span></code>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_mptt_track_tree_insertions</span></code>(tree_id, ...)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_mptt_track_tree_modified</span></code>(tree_id)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_mpttfield</span></code>(fieldname)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_perform_date_checks</span></code>(date_checks)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_perform_unique_checks</span></code>(unique_checks)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_prepare_related_fields_for_save</span></code>(operation_name)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_save_parents</span></code>(cls, using, update_fields)</p></td>
+<td><p>Save all the parents of cls using values from self.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_save_table</span></code>([raw, cls, force_insert, ...])</p></td>
+<td><p>Do the heavy-lifting involved in saving.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_set_mptt_updates_enabled</span></code>(value)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_set_pk_val</span></code>(value)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">check</span></code>(**kwargs)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">clean</span></code>()</p></td>
+<td><p>Hook for doing any extra model-wide validation after clean() has been called on every field by self.clean_fields.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">clean_fields</span></code>([exclude])</p></td>
+<td><p>Clean all fields and raise a ValidationError containing a dict of all validation errors if any occur.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">date_error_message</span></code>(lookup_type, field_name, ...)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code>(*args, **kwargs)</p></td>
+<td><p>Calling <code class="docutils literal notranslate"><span class="pre">delete</span></code> on a node will delete it as well as its full subtree, as opposed to reattaching all the subnodes to its parent node.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_db</span></code>(db, field_names, values)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">full_clean</span></code>([exclude, validate_unique])</p></td>
+<td><p>Call clean_fields(), clean(), and validate_unique() on the model.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_absolute_url</span></code>()</p></td>
+<td><p>Return a path.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_ancestors</span></code>([ascending, include_self])</p></td>
+<td><p>Creates a <code class="docutils literal notranslate"><span class="pre">QuerySet</span></code> containing the ancestors of this model instance.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_children</span></code>()</p></td>
+<td><p>Returns a <code class="docutils literal notranslate"><span class="pre">QuerySet</span></code> containing the immediate children of this model instance, in tree order.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_deferred_fields</span></code>()</p></td>
+<td><p>Return a set containing names of deferred fields for this instance.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_descendant_count</span></code>()</p></td>
+<td><p>Returns the number of descendants this model instance has.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_descendants</span></code>([include_self])</p></td>
+<td><p>Creates a <code class="docutils literal notranslate"><span class="pre">QuerySet</span></code> containing descendants of this model instance, in tree order.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_family</span></code>()</p></td>
+<td><p>Returns a <code class="docutils literal notranslate"><span class="pre">QuerySet</span></code> containing the ancestors, the model itself and the descendants, in tree order.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_leafnodes</span></code>([include_self])</p></td>
+<td><p>Creates a <code class="docutils literal notranslate"><span class="pre">QuerySet</span></code> containing leafnodes of this model instance, in tree order.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_level</span></code>()</p></td>
+<td><p>Returns the level of this node (distance from root)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_next_sibling</span></code>(*filter_args, **filter_kwargs)</p></td>
+<td><p>Returns this model instance's next sibling in the tree, or <code class="docutils literal notranslate"><span class="pre">None</span></code> if it doesn't have a next sibling.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_previous_sibling</span></code>(*filter_args, ...)</p></td>
+<td><p>Returns this model instance's previous sibling in the tree, or <code class="docutils literal notranslate"><span class="pre">None</span></code> if it doesn't have a previous sibling.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_related_content_type</span></code>(content_type)</p></td>
+<td><p>Get all related items of the specified content type.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_relation_type</span></code>(relation_type)</p></td>
+<td><p>Get all relations of the specified relation type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_root</span></code>()</p></td>
+<td><p>Returns the root node of this model instance's tree.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_siblings</span></code>([include_self])</p></td>
+<td><p>Creates a <code class="docutils literal notranslate"><span class="pre">QuerySet</span></code> containing siblings of this model instance.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">insert_at</span></code>(target[, position, save, ...])</p></td>
+<td><p>Convenience method for calling <code class="docutils literal notranslate"><span class="pre">TreeManager.insert_node</span></code> with this model instance.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_ancestor_of</span></code>(other[, include_self])</p></td>
+<td><p>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if this model is an ancestor of the given node, <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_child_node</span></code>()</p></td>
+<td><p>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if this model instance is a child node, <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_descendant_of</span></code>(other[, include_self])</p></td>
+<td><p>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if this model is a descendant of the given node, <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_leaf_node</span></code>()</p></td>
+<td><p>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if this model instance is a leaf node (it has no children), <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_root_node</span></code>()</p></td>
+<td><p>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if this model instance is a root node, <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">move_to</span></code>(target[, position])</p></td>
+<td><p>Convenience method for calling <code class="docutils literal notranslate"><span class="pre">TreeManager.move_node</span></code> with this model instance.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">prepare_database_save</span></code>(field)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">refresh_from_db</span></code>([using, fields])</p></td>
+<td><p>Reload field values from the database.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">save</span></code>(*args, **kwargs)</p></td>
+<td><p>Save the category.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">save_base</span></code>([raw, force_insert, force_update, ...])</p></td>
+<td><p>Handle the parts of saving which should be done only once per save, yet need to be done in raw saves, too.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">serializable_value</span></code>(field_name)</p></td>
+<td><p>Return the value of the field name for this instance.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">unique_error_message</span></code>(model_class, unique_check)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">validate_unique</span></code>([exclude])</p></td>
+<td><p>Check unique constraints on the model and raise ValidationError if any failed.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_meta</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_mptt_is_tracking</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_mptt_meta</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_mptt_updates_enabled</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_threadlocal</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">_tree_manager</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">active</span></code></p></td>
+<td><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.BooleanField" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">BooleanField</span></code></a></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">alternate_title</span></code></p></td>
+<td><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.CharField" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">CharField</span></code></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">alternate_url</span></code></p></td>
+<td><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.CharField" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">CharField</span></code></a></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">categoryrelation_set</span></code></p></td>
+<td><p>Type: Reverse <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.ForeignKey" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ForeignKey</span></code></a> from <a class="reference internal" href="categories.models.CategoryRelation.html#categories.models.CategoryRelation" title="categories.models.CategoryRelation"><code class="xref py py-class docutils literal notranslate"><span class="pre">CategoryRelation</span></code></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">children</span></code></p></td>
+<td><p>Type: Reverse <code class="xref py py-class docutils literal notranslate"><span class="pre">TreeForeignKey</span></code> from <a class="reference internal" href="#categories.models.Category" title="categories.models.Category"><code class="xref py py-class docutils literal notranslate"><span class="pre">Category</span></code></a></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">description</span></code></p></td>
+<td><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.TextField" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextField</span></code></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">flatpage_set</span></code></p></td>
+<td><p>Type: Reverse <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.ForeignKey" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ForeignKey</span></code></a> from <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/contrib/flatpages/#django.contrib.flatpages.models.FlatPage" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">FlatPage</span></code></a></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">id</span></code></p></td>
+<td><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.AutoField" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">AutoField</span></code></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">level</span></code></p></td>
+<td><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.PositiveIntegerField" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">PositiveIntegerField</span></code></a></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">lft</span></code></p></td>
+<td><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.PositiveIntegerField" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">PositiveIntegerField</span></code></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">m2mcats</span></code></p></td>
+<td><p>Type: Reverse <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.ManyToManyField" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ManyToManyField</span></code></a> from <code class="xref py py-class docutils literal notranslate"><span class="pre">SimpleText</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">meta_extra</span></code></p></td>
+<td><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.TextField" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextField</span></code></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">meta_keywords</span></code></p></td>
+<td><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.CharField" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">CharField</span></code></a></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">more_cats</span></code></p></td>
+<td><p>Type: Reverse <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.ManyToManyField" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ManyToManyField</span></code></a> from <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/contrib/flatpages/#django.contrib.flatpages.models.FlatPage" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">FlatPage</span></code></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.CharField" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">CharField</span></code></a></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">objects</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">order</span></code></p></td>
+<td><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.IntegerField" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">IntegerField</span></code></a></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">other_cats</span></code></p></td>
+<td><p>Type: Reverse <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.ManyToManyField" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ManyToManyField</span></code></a> from <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/contrib/flatpages/#django.contrib.flatpages.models.FlatPage" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">FlatPage</span></code></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">parent</span></code></p></td>
+<td><p>Type: <code class="xref py py-class docutils literal notranslate"><span class="pre">TreeForeignKey</span></code> to <a class="reference internal" href="#categories.models.Category" title="categories.models.Category"><code class="xref py py-class docutils literal notranslate"><span class="pre">Category</span></code></a></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">parent_id</span></code></p></td>
+<td><p>Internal field, use <code class="xref py py-class docutils literal notranslate"><span class="pre">parent</span></code> instead.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pk</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">rght</span></code></p></td>
+<td><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.PositiveIntegerField" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">PositiveIntegerField</span></code></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">short_title</span></code></p></td>
+<td><p>Return the name.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">simpletext_sec_cat</span></code></p></td>
+<td><p>Type: Reverse <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.ForeignKey" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ForeignKey</span></code></a> from <code class="xref py py-class docutils literal notranslate"><span class="pre">SimpleText</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">simpletext_set</span></code></p></td>
+<td><p>Type: Reverse <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.ForeignKey" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ForeignKey</span></code></a> from <code class="xref py py-class docutils literal notranslate"><span class="pre">SimpleText</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">slug</span></code></p></td>
+<td><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.SlugField" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">SlugField</span></code></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">thumbnail</span></code></p></td>
+<td><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.FileField" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">FileField</span></code></a></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">thumbnail_height</span></code></p></td>
+<td><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.IntegerField" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">IntegerField</span></code></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">thumbnail_width</span></code></p></td>
+<td><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.IntegerField" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">IntegerField</span></code></a></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tree</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tree_id</span></code></p></td>
+<td><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/4.1/_objects/ref/models/fields/#django.db.models.PositiveIntegerField" title="(in Django v4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">PositiveIntegerField</span></code></a></p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</section>
+
+
+            </article>
+            
+            
+            
+            <footer class="bd-footer-article">
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="categories.models.html" title="previous page">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">previous</p>
+          <p class="prev-next-title">models</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="categories.models.CategoryRelation.html" title="next page">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">next</p>
+      <p class="prev-next-title">CategoryRelation</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+            </footer>
+            
+          </div>
+          
+          
+          
+            <div class="bd-sidebar-secondary bd-toc">
+              
+<div class="toc-item">
+  
+</div>
+
+<div class="toc-item">
+  
+<div class="tocsection sourcelink">
+    <a href="../_sources/api/categories.models.Category.rst.txt">
+        <i class="fas fa-file-alt"></i> Show Source
+    </a>
+</div>
+
+</div>
+
+            </div>
+          
+          
+        </div>
+        <footer class="bd-footer-content">
+          <div class="bd-footer-content__inner">
+            
+          </div>
+        </footer>
+        
+      </main>
+    </div>
+  </div>
+
+  
+    
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b"></script>
+
+  <footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    
+<p class="copyright">
+
+    &copy; Copyright 2010-2022, Corey Oordt.<br>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+<p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.1.1.<br>
+</p>
+
+  </div>
+  
+</div>
+  </footer>
+  </body>
+</html>

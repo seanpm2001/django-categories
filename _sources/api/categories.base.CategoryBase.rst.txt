@@ -1,0 +1,208 @@
+.. rst-class:: h4 text-secondary
+
+categories.base.CategoryBase
+
+CategoryBase
+============
+
+.. currentmodule:: categories.base
+
+.. autoclass:: CategoryBase
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~CategoryBase._check_column_name_clashes
+      
+      ~CategoryBase._check_constraints
+      
+      ~CategoryBase._check_default_pk
+      
+      ~CategoryBase._check_field_name_clashes
+      
+      ~CategoryBase._check_fields
+      
+      ~CategoryBase._check_id_field
+      
+      ~CategoryBase._check_index_together
+      
+      ~CategoryBase._check_indexes
+      
+      ~CategoryBase._check_local_fields
+      
+      ~CategoryBase._check_long_column_names
+      
+      ~CategoryBase._check_m2m_through_same_relationship
+      
+      ~CategoryBase._check_managers
+      
+      ~CategoryBase._check_model
+      
+      ~CategoryBase._check_model_name_db_lookup_clashes
+      
+      ~CategoryBase._check_ordering
+      
+      ~CategoryBase._check_property_name_related_field_accessor_clashes
+      
+      ~CategoryBase._check_single_primary_key
+      
+      ~CategoryBase._check_swappable
+      
+      ~CategoryBase._check_unique_together
+      
+      ~CategoryBase._do_insert
+      
+      ~CategoryBase._do_update
+      
+      ~CategoryBase._get_FIELD_display
+      
+      ~CategoryBase._get_expr_references
+      
+      ~CategoryBase._get_next_or_previous_by_FIELD
+      
+      ~CategoryBase._get_next_or_previous_in_order
+      
+      ~CategoryBase._get_pk_val
+      
+      ~CategoryBase._get_unique_checks
+      
+      ~CategoryBase._get_user_field_names
+      
+      ~CategoryBase._is_saved
+      
+      ~CategoryBase._mptt_refresh
+      
+      ~CategoryBase._mptt_start_tracking
+      
+      ~CategoryBase._mptt_stop_tracking
+      
+      ~CategoryBase._mptt_track_tree_insertions
+      
+      ~CategoryBase._mptt_track_tree_modified
+      
+      ~CategoryBase._mpttfield
+      
+      ~CategoryBase._perform_date_checks
+      
+      ~CategoryBase._perform_unique_checks
+      
+      ~CategoryBase._prepare_related_fields_for_save
+      
+      ~CategoryBase._save_parents
+      
+      ~CategoryBase._save_table
+      
+      ~CategoryBase._set_mptt_updates_enabled
+      
+      ~CategoryBase._set_pk_val
+      
+      ~CategoryBase.check
+      
+      ~CategoryBase.clean
+      
+      ~CategoryBase.clean_fields
+      
+      ~CategoryBase.date_error_message
+      
+      ~CategoryBase.delete
+      
+      ~CategoryBase.from_db
+      
+      ~CategoryBase.full_clean
+      
+      ~CategoryBase.get_ancestors
+      
+      ~CategoryBase.get_children
+      
+      ~CategoryBase.get_deferred_fields
+      
+      ~CategoryBase.get_descendant_count
+      
+      ~CategoryBase.get_descendants
+      
+      ~CategoryBase.get_family
+      
+      ~CategoryBase.get_leafnodes
+      
+      ~CategoryBase.get_level
+      
+      ~CategoryBase.get_next_sibling
+      
+      ~CategoryBase.get_previous_sibling
+      
+      ~CategoryBase.get_root
+      
+      ~CategoryBase.get_siblings
+      
+      ~CategoryBase.insert_at
+      
+      ~CategoryBase.is_ancestor_of
+      
+      ~CategoryBase.is_child_node
+      
+      ~CategoryBase.is_descendant_of
+      
+      ~CategoryBase.is_leaf_node
+      
+      ~CategoryBase.is_root_node
+      
+      ~CategoryBase.move_to
+      
+      ~CategoryBase.prepare_database_save
+      
+      ~CategoryBase.refresh_from_db
+      
+      ~CategoryBase.save
+      
+      ~CategoryBase.save_base
+      
+      ~CategoryBase.serializable_value
+      
+      ~CategoryBase.unique_error_message
+      
+      ~CategoryBase.validate_unique
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      
+      
+      
+      
+      
+      ~CategoryBase._meta
+      
+      ~CategoryBase._mptt_is_tracking
+      
+      ~CategoryBase._mptt_meta
+      
+      ~CategoryBase._mptt_tracking_base
+      
+      ~CategoryBase._mptt_updates_enabled
+      
+      ~CategoryBase.active
+      
+      ~CategoryBase.name
+      
+      ~CategoryBase.objects
+      
+      ~CategoryBase.parent
+      
+      ~CategoryBase.parent_id
+      
+      ~CategoryBase.pk
+      
+      ~CategoryBase.slug
+      
+      ~CategoryBase.tree
+      
+   

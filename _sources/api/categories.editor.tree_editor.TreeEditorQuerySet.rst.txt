@@ -1,0 +1,176 @@
+.. rst-class:: h4 text-secondary
+
+categories.editor.tree_editor.TreeEditorQuerySet
+
+TreeEditorQuerySet
+==================
+
+.. currentmodule:: categories.editor.tree_editor
+
+.. autoclass:: TreeEditorQuerySet
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~TreeEditorQuerySet._add_hints
+      
+      ~TreeEditorQuerySet._annotate
+      
+      ~TreeEditorQuerySet._batched_insert
+      
+      ~TreeEditorQuerySet._chain
+      
+      ~TreeEditorQuerySet._clone
+      
+      ~TreeEditorQuerySet._combinator_query
+      
+      ~TreeEditorQuerySet._earliest
+      
+      ~TreeEditorQuerySet._extract_model_params
+      
+      ~TreeEditorQuerySet._fetch_all
+      
+      ~TreeEditorQuerySet._filter_or_exclude
+      
+      ~TreeEditorQuerySet._filter_or_exclude_inplace
+      
+      ~TreeEditorQuerySet._has_filters
+      
+      ~TreeEditorQuerySet._insert
+      
+      ~TreeEditorQuerySet._iterator
+      
+      ~TreeEditorQuerySet._merge_known_related_objects
+      
+      ~TreeEditorQuerySet._merge_sanity_check
+      
+      ~TreeEditorQuerySet._next_is_sticky
+      
+      ~TreeEditorQuerySet._not_support_combined_queries
+      
+      ~TreeEditorQuerySet._prefetch_related_objects
+      
+      ~TreeEditorQuerySet._prepare_for_bulk_create
+      
+      ~TreeEditorQuerySet._raw_delete
+      
+      ~TreeEditorQuerySet._update
+      
+      ~TreeEditorQuerySet._validate_values_are_expressions
+      
+      ~TreeEditorQuerySet._values
+      
+      ~TreeEditorQuerySet.aggregate
+      
+      ~TreeEditorQuerySet.alias
+      
+      ~TreeEditorQuerySet.all
+      
+      ~TreeEditorQuerySet.annotate
+      
+      ~TreeEditorQuerySet.as_manager
+      
+      ~TreeEditorQuerySet.bulk_create
+      
+      ~TreeEditorQuerySet.bulk_update
+      
+      ~TreeEditorQuerySet.complex_filter
+      
+      ~TreeEditorQuerySet.count
+      
+      ~TreeEditorQuerySet.create
+      
+      ~TreeEditorQuerySet.dates
+      
+      ~TreeEditorQuerySet.datetimes
+      
+      ~TreeEditorQuerySet.defer
+      
+      ~TreeEditorQuerySet.delete
+      
+      ~TreeEditorQuerySet.difference
+      
+      ~TreeEditorQuerySet.distinct
+      
+      ~TreeEditorQuerySet.earliest
+      
+      ~TreeEditorQuerySet.exclude
+      
+      ~TreeEditorQuerySet.exists
+      
+      ~TreeEditorQuerySet.explain
+      
+      ~TreeEditorQuerySet.extra
+      
+      ~TreeEditorQuerySet.filter
+      
+      ~TreeEditorQuerySet.first
+      
+      ~TreeEditorQuerySet.get
+      
+      ~TreeEditorQuerySet.get_or_create
+      
+      ~TreeEditorQuerySet.in_bulk
+      
+      ~TreeEditorQuerySet.intersection
+      
+      ~TreeEditorQuerySet.iterator
+      
+      ~TreeEditorQuerySet.last
+      
+      ~TreeEditorQuerySet.latest
+      
+      ~TreeEditorQuerySet.none
+      
+      ~TreeEditorQuerySet.only
+      
+      ~TreeEditorQuerySet.order_by
+      
+      ~TreeEditorQuerySet.prefetch_related
+      
+      ~TreeEditorQuerySet.raw
+      
+      ~TreeEditorQuerySet.resolve_expression
+      
+      ~TreeEditorQuerySet.reverse
+      
+      ~TreeEditorQuerySet.select_for_update
+      
+      ~TreeEditorQuerySet.select_related
+      
+      ~TreeEditorQuerySet.union
+      
+      ~TreeEditorQuerySet.update
+      
+      ~TreeEditorQuerySet.update_or_create
+      
+      ~TreeEditorQuerySet.using
+      
+      ~TreeEditorQuerySet.values
+      
+      ~TreeEditorQuerySet.values_list
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      
+      
+      
+      
+      
+      ~TreeEditorQuerySet.db
+      
+      ~TreeEditorQuerySet.ordered
+      
+      ~TreeEditorQuerySet.query
+      
+   

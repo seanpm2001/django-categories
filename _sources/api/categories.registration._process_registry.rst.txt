@@ -1,0 +1,9 @@
+.. rst-class:: h4 text-secondary
+
+categories.registration._process_registry
+
+\_process\_registry
+===================
+
+.. currentmodule:: categories.registration
+.. autofunction:: _process_registry

@@ -1,0 +1,150 @@
+.. rst-class:: h4 text-secondary
+
+categories.models.CategoryRelation
+
+CategoryRelation
+================
+
+.. currentmodule:: categories.models
+
+.. autoclass:: CategoryRelation
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~CategoryRelation._check_column_name_clashes
+      
+      ~CategoryRelation._check_constraints
+      
+      ~CategoryRelation._check_default_pk
+      
+      ~CategoryRelation._check_field_name_clashes
+      
+      ~CategoryRelation._check_fields
+      
+      ~CategoryRelation._check_id_field
+      
+      ~CategoryRelation._check_index_together
+      
+      ~CategoryRelation._check_indexes
+      
+      ~CategoryRelation._check_local_fields
+      
+      ~CategoryRelation._check_long_column_names
+      
+      ~CategoryRelation._check_m2m_through_same_relationship
+      
+      ~CategoryRelation._check_managers
+      
+      ~CategoryRelation._check_model
+      
+      ~CategoryRelation._check_model_name_db_lookup_clashes
+      
+      ~CategoryRelation._check_ordering
+      
+      ~CategoryRelation._check_property_name_related_field_accessor_clashes
+      
+      ~CategoryRelation._check_single_primary_key
+      
+      ~CategoryRelation._check_swappable
+      
+      ~CategoryRelation._check_unique_together
+      
+      ~CategoryRelation._do_insert
+      
+      ~CategoryRelation._do_update
+      
+      ~CategoryRelation._get_FIELD_display
+      
+      ~CategoryRelation._get_expr_references
+      
+      ~CategoryRelation._get_next_or_previous_by_FIELD
+      
+      ~CategoryRelation._get_next_or_previous_in_order
+      
+      ~CategoryRelation._get_pk_val
+      
+      ~CategoryRelation._get_unique_checks
+      
+      ~CategoryRelation._perform_date_checks
+      
+      ~CategoryRelation._perform_unique_checks
+      
+      ~CategoryRelation._prepare_related_fields_for_save
+      
+      ~CategoryRelation._save_parents
+      
+      ~CategoryRelation._save_table
+      
+      ~CategoryRelation._set_pk_val
+      
+      ~CategoryRelation.check
+      
+      ~CategoryRelation.clean
+      
+      ~CategoryRelation.clean_fields
+      
+      ~CategoryRelation.date_error_message
+      
+      ~CategoryRelation.delete
+      
+      ~CategoryRelation.from_db
+      
+      ~CategoryRelation.full_clean
+      
+      ~CategoryRelation.get_deferred_fields
+      
+      ~CategoryRelation.prepare_database_save
+      
+      ~CategoryRelation.refresh_from_db
+      
+      ~CategoryRelation.save
+      
+      ~CategoryRelation.save_base
+      
+      ~CategoryRelation.serializable_value
+      
+      ~CategoryRelation.unique_error_message
+      
+      ~CategoryRelation.validate_unique
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      
+      
+      
+      
+      
+      ~CategoryRelation._meta
+      
+      ~CategoryRelation.category
+      
+      ~CategoryRelation.category_id
+      
+      ~CategoryRelation.content_object
+      
+      ~CategoryRelation.content_type
+      
+      ~CategoryRelation.content_type_id
+      
+      ~CategoryRelation.id
+      
+      ~CategoryRelation.object_id
+      
+      ~CategoryRelation.objects
+      
+      ~CategoryRelation.pk
+      
+      ~CategoryRelation.relation_type
+      
+   
